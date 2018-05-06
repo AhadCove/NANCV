@@ -1,0 +1,18 @@
+{
+  "name": "Nan2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile": "node-gyp rebuild",
+    "start": "node main.js"
+  },
+  "gypfile": true,
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "nan": "^2.10.0",
+    "node-gyp": "^3.6.2"
+  }
+}
