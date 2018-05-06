@@ -46,11 +46,11 @@ function fallback() {
 
 function printPaths(opencvPath) {
   if (flag === "--cflags") {
-    console.log("\"" + opencvPath + "\\..\\..\\include\"");
-    console.log("\"" + opencvPath + "\\..\\..\\include\\opencv\"");
+    console.log("\"" + opencvPath + "\\build\\include\"");
+    console.log("\"" + opencvPath + "\\build\\include\\opencv2\"");
   }
   else if (flag === "--libs") {
-    var libPath = opencvPath + "\\lib\\";
+    var libPath = opencvPath + "\\build\\x64\\vc15\\lib\\";
 
     fs.readdir(libPath, function (err, files) {
       if (err) {
